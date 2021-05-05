@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="./css/site_dark.css">
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About</title>
+</head>
+<body>
+<div class="header">
+  <img src="./media/logo.png" alt="logo " width="175" height="175" style="float: left">
+  <h1>About</h1>
+</div>
+
+<div class="navbar">
+  <a href="index_dark.html" >Home</a>
+  <a href="about_dark.html" class="active">About</a>
+  <a href="projects_dark.html">Projects</a>
+  <a href="contact_dark.html">Contact Me</a>
+  <a href="about.html" class="right">Light Mode</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>Professional Certifications</h2>
+    <ul>
+      <li>IBM Applied AI Professional</li>
+      <li>Google IT Support Professional</li>
+      <li>SRE and DevOps Engineer with Google Cloud Professional</li>
+    </ul>
+  </div>
+
+  <div class="main">
+    <h2>Runner/Administrative Assistant – Gough, Shanahan, Johnson & Waterman LLC</h2>
+    <p>Located in Helena, Montana, Gough, Shanahan Johnson & Waterman LLC was Montana’s oldest law firm. Beginning in 2014, I handled the delivery of sensitive and valuable documents to various law firms and legal establishments around the greater Helena area. I was also the librarian for its thousands of law sources until the firm’s unfortunate dissolution in 2015. During my time at Gough, Shanahan, Johnson & Waterman LLC, I was most proud of my project in which I cataloged the firm’s thousands of books, in which I created a virtual reference library for each finding by the attorneys and legal aids. Users could also request the delivery of titles to their desk instantly.</p>
+  </div>
+
+  <div class="side2">
+    <h2>Office Assistant – Lewis and Clark County District Court</h2>
+    <p>Following my time at Gough, Shanahan, Johnson & Waterman LLC, I began working at the Lewis and Clark County District Court. I assisted in the official document processing of everything from criminal arrest profiles to civil cases. My daily duties included filing processing, organization, research, and fulfillment of public data requests. I worked with the Clerk of Court and my colleagues to start the process of virtualizing the countless documents within the court in order to optimize future filing efficiency.</p>
+  </div>
+</div>
+
+<div class="navbar">
+  <p> </p>
+</div>
+
+<div class="footer-basic">
+  <footer>
+    <ul class="list-inline">
+      <li class="list-inline-item"><a href="index.html">Home</a></li>
+      <li class="list-inline-item"><a href="about.html">About</a></li>
+      <li class="list-inline-item"><a href="projects.html">Projects</a></li>
+      <li class="list-inline-item"><a href="contact.html">Contact me</a></li>
+    </ul>
+  </footer>
+</div>
+<script>
+
+  window.watsonAssistantChatOptions = {
+    integrationID: "1ff16926-3bf1-40c0-b336-0efabb386baa", // The ID of this integration.
+    region: "us-south", // The region your integration is hosted in.
+    serviceInstanceID: "2bf98a82-f504-4d55-b4a6-1b29ba88fd7f", // The ID of your service instance.
+    onLoad: function(instance) { instance.render(); }
+  };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+    document.head.appendChild(t);
+  });
+</script>
+
+</body>
+</html>
