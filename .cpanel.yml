@@ -2,8 +2,12 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/lhfhwgi7gwhc/public_html/
     - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp index_dark.html $DEPLOYPATH
     - /bin/cp about.html $DEPLOYPATH
+    - /bin/cp about_dark.html $DEPLOYPATH
     - /bin/cp projects.html $DEPLOYPATH
+    - /bin/cp projects_dark.html $DEPLOYPATH
     - /bin/cp contact.html $DEPLOYPATH
+    - /bin/cp contact_dark.html $DEPLOYPATH
     - /bin/cp -R css $DEPLOYPATH
     - /bin/cp -R media $DEPLOYPATH
