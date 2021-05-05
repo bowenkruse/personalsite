@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="../css/site.css">
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Projects</title>
+</head>
+<body>
+
+<div class="header">
+    <img src="../media/logo.png" alt="logo " width="175" height="175" style="float: left">
+    <h1>Projects</h1>
+</div>
+
+<div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html" class="active">Projects</a>
+    <a href="contact.html">Contact Me</a>
+</div>
+
+<div class="row" >
+    <div class="side">
+        <h2>Google Hash Code 2020</h2>
+        <p>At the Google Hash Code 2020 Sharjah Hub, I put together a team of four fellow students, that collectively were from three different continents, and spoke five languages. I implemented a series of miniature scrum sprints in order to better structure our team’s efforts and also delegated tasks between team members as needed in order to mitigate issues that arose from conflicting approaches and preferences in programming languages. My 2020 team finished with 20,967,384 points in the 62 percentile of all 10,724 global competitors with two unique solutions I was very proud of.</p>
+    </div>
+
+    <div class="main">
+        <h2>United Arab Emirates Hackathon 2020</h2>
+        <p>The United Arab Emirates Hackathon was a unique event for me, as it did not focus on programming solutions or other standard hackathon outcomes. Instead, the goal was to develop solutions and innovative ideas that would contribute to actual issues that the various communities of the UAE were facing under the competition motto: ‘Data for Happiness and Well-being’. I created a proposed solution to traffic congestion between emirates that utilized automated smart corridors and a Self-Adaptive Traffic Signal system based on real-time data. I also created a beta version of a Transit App feature that allowed users to plan routes within and between emirates using all available types of public transportation between destinations.</p>
+
+    </div>
+
+    <div class="side2">
+        <h2>Helmet Identification – Visual Recognition AI Model</h2>
+        <p>In order to demonstrate my Visual Recognition model, I used a real-world example of where AI could be implemented. On job sites, wearing helmets and similar safety gear is important for maintaining safe work environments. This model could inform a company when a worker is not wearing a helmet, or is, with a very high level of confidence despite a small set of unstructured training data. Below are sample screenshots of test inputs.</p>
+        <img src="../media/helmet1.png" alt="logo " width="225" height="225" >
+        <img src="../media/helmet2.png" alt="logo " width="225" height="225">
+    </div>
+</div>
+
+<div class="navbar">
+    <p> </p>
+</div>
+
+<div class="row">
+    <div class="side">
+        <h2>Bo the Chatbot</h2>
+        <p>Bo the Chatbot, who hopefully you’re now familiar with, is powered by IBM Watson. Using Watson’s Discovery, Tone Analyzer, Assistant, and Natural Language Understanding for processing and analysis, Bo can answer most of the questions that reading through the entire site could. Bo will continue to grow and learn as the complexity of his algorithm increases. Give Bo the Chatbot a try at the bottom left corner of the site.</p>
+        <img src="../media/bo_the_bot.png" alt="bothebot" width="329" height="513" class="center">
+    </div>
+
+    <div class="main">
+        <h2>Image Processing - from scratch</h2>
+        <p>As more autonomous vehicles hit the road and ‘Smart Drones’ take to the sky, image processing/recognition has never been more relevant. How does all of that work? Why should we care how that works when you can just import OpenCV into your project? Is this an efficient use of my time? I set out to answer only the first question. Using pixel by pixel processing and without using any image processing library, this program does edge analysis, object recognition, target blurring, and color analysis.</p>
+        <div class="slideshow-container" >
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 4</div>
+                <img src="../media/img1.jpg" style="width:70%" alt="slide 1">
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 4</div>
+                <img src="../media/img2.jpg" style="width:70%" alt="slide 2">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 4</div>
+                <img src="../media/img3.jpg" style="width:70%" alt="slide 3">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 4</div>
+                <img src="../media/img4.jpg" style="width:70%" alt="slide 4">
+            </div>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+
+        </div>
+    </div>
+
+    <div class="side2">
+        <h2>BattleBit</h2>
+        <p>BattleBit is a game of Battle Ship  programmed in C played on a local or remote server, where the game boards are unsigned 64 bit integers (8 by 8 board). Players can fire at each other, message one another, and print the board at any time. </p>
+        <img src="../media/battle_bit.png" alt="battle_bit" >
+
+    </div>
+</div>
+
+<div class="navbar">
+    <p> </p>
+</div>
+
+<div class="footer-basic">
+    <footer>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="index.html">Home</a></li>
+            <li class="list-inline-item"><a href="about.html">About</a></li>
+            <li class="list-inline-item"><a href="projects.html">Projects</a></li>
+            <li class="list-inline-item"><a href="contact.html">Contact me</a></li>
+        </ul>
+    </footer>
+</div>
+
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+    }
+</script>
+<script>
+    window.watsonAssistantChatOptions = {
+        integrationID: "1ff16926-3bf1-40c0-b336-0efabb386baa", // The ID of this integration.
+        region: "us-south", // The region your integration is hosted in.
+        serviceInstanceID: "2bf98a82-f504-4d55-b4a6-1b29ba88fd7f", // The ID of your service instance.
+        onLoad: function(instance) { instance.render(); }
+    };
+    setTimeout(function(){
+        const t=document.createElement('script');
+        t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+        document.head.appendChild(t);
+    });
+</script>
+</body>
+</html>
