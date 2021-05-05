@@ -7,6 +7,13 @@ body {
     font-family: 'Source Code Pro', monospace;
     margin: 0;
     background-color: whitesmoke;
+    color: black;
+}
+
+
+.dark-mode {
+    background-color: black;
+    color: whitesmoke;
 }
 
 /* Header/logo Title */
@@ -23,7 +30,18 @@ body {
     font-size: 40px;
 }
 
+.button {
+    border: none;
+    color: white;
+    text-align: center;
+    float: right;
+    display: block;
+    padding: 14px 20px;
+}
 
+.dark_button {
+    background-color: #333;
+}
 /* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
 .navbar {
     overflow: hidden;
@@ -73,23 +91,26 @@ body {
 .side {
     -ms-flex: 33%; /* IE10 */
     flex: 33%;
-    background-color: #f1f1f1;
+    background-color: inherit;
     padding: 50px;
+    color: inherit;
 }
 
 /* Main column */
 .main {
     -ms-flex: 33%; /* IE10 */
     flex: 33%;
-    background-color: whitesmoke;
+    background-color: inherit;
     padding: 50px;
+    color: inherit;
 }
 
 .side2 {
     -ms-flex: 33%;
     flex: 33%;
-    background-color: #f1f1f1;
+    background-color: inherit;
     padding: 50px;
+    color: inherit;
 }
 
 /* Fake image, just for this example */

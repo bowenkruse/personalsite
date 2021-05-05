@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="../css/site.css">
+<link rel="stylesheet" href="./css/site.css">
 <head>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
@@ -10,15 +10,16 @@
 </head>
 <body>
 <div class="header">
-  <img src="../media/logo.png" alt="logo " width="175" height="175" style="float: left">
+  <img src="./media/logo.png" alt="logo " width="175" height="175" style="float: left">
   <h1>About</h1>
 </div>
 
 <div class="navbar">
-  <a href="index.html">Home</a>
-  <a href="about.html" class="active">About</a>
-  <a href="projects.html">Projects</a>
-  <a href="contact.html">Contact Me</a>
+    <a href="index.html">Home</a>
+    <a href="about.html" class="active">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact Me</a>
+    <a href="#" onclick="toggle_dark()" class="right">Toggle Dark Mode</a>
 </div>
 
 <div class="row">
@@ -56,6 +57,23 @@
         </ul>
     </footer>
 </div>
+<script>
+    function toggle_dark() {
+        let element = document.body;
+        element.classList.toggle("dark-mode");
+    }
+    window.watsonAssistantChatOptions = {
+        integrationID: "1ff16926-3bf1-40c0-b336-0efabb386baa", // The ID of this integration.
+        region: "us-south", // The region your integration is hosted in.
+        serviceInstanceID: "2bf98a82-f504-4d55-b4a6-1b29ba88fd7f", // The ID of your service instance.
+        onLoad: function(instance) { instance.render(); }
+    };
+    setTimeout(function(){
+        const t=document.createElement('script');
+        t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+        document.head.appendChild(t);
+    });
+</script>
 
 </body>
 </html>
