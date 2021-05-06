@@ -56,6 +56,8 @@ body {
     text-align: center;
     padding: 14px 20px;
     text-decoration: none;
+    font-family: 'Play', sans-serif;
+
 }
 
 /* Right-aligned link */
@@ -73,6 +75,16 @@ body {
 .navbar a.active {
     background-color: #BFA995;
     color: black;
+}
+
+.navbar a.dark {
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-family: 'Play', sans-serif;
 }
 
 /* Column container */
